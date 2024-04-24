@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kullanici</title>
+</head>
+<body>
+    <form method="post" action="">
+        {% csrf_token %}
+        <label for="name">isim</label><br>
+        <input type="text" id="name" name="name" value=""><br><br>
+
+        <label for="surname">soyisim</label><br>
+        <input type="text" id="surname" name="surname" value=""><br><br>
+
+        <label for="email">eposta</label><br>
+        <input type="text" id="email" name="email" value=""><br><br>
+
+        <label for="phone">telefon</label><br>
+        <input type="text" id="phone" name="phone" value=""><br><br>
+        
+        <input type="submit" value="Submit">
+        {{invalid_input_message}}
+        
+    </form>
+</body>
+</html>

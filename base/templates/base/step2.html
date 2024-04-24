@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>platform</title>
+</head>
+<body>
+    <form method="post" action="">
+        {% csrf_token %}
+        <label for="url">mağaza linki</label><br>
+        <input type="text" id="url" name="url" value=""><br>
+
+        <label for="platform">platform</label><br>
+        <select name="platform" id="platform">
+            <option value="Trendyol">Trendyol</option>
+            <option value="Hepsiburada">Hepsiburada</option>
+            <option value="Amazon">Amazon</option>
+          </select>
+        
+        <input type="submit" value="Submit">
+        {{invalid_input_message}}
+        
+    </form>
+</body>
+</html>
